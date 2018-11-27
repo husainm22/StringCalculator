@@ -43,8 +43,4 @@ public class StringCalculatorApplicationTests {
 	public void evaluateExpression() {
 		assertThat(StringCalculator.evaluate("(8*5/8)-(3/1)-5"), is("-3"));
 	}
-	@Test
-	public void evaluateInvalidExpression() {
-		assertThat(StringCalculator.evaluate("abc"), is("INVALID EXPRESSION"));
-	}
 }
